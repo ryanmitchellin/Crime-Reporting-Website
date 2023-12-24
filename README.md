@@ -1,4 +1,7 @@
-# NCT
+# Project: Baddie reported by the civilians website
+
+## About
+This is a website where civilians can report the baddie's information and the location where they saw it. Then, the location can be seen on the map using the Leaflet API.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
 
