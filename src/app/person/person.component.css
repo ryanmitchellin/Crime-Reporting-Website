@@ -1,0 +1,29 @@
+tr {
+    border: 1px solid black;
+}
+
+td:first-child {
+    padding-left: 2em;
+}
+
+.more-btn {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    color: darkgrey;
+}
+
+.more-btn:hover {
+    color: grey;
+}
+
+.del-btn {
+    background: none;
+    color: red;
+    border: none;
+    font-size: 1.5em;
+}
+
+.del-btn:hover {
+    text-decoration: underline;
+}

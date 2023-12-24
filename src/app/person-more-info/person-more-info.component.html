@@ -1,0 +1,25 @@
+<app-map></app-map>
+<figure *ngIf="person">
+    <img *ngIf="person.data.image; else defaultImage" [src]="person.data.image" alt="Person Image" class="image-box">
+    <ng-template #defaultImage>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDPv1yj_NPcC5rtnynX4YY_EBnDqVoYlCv6NT_sqUjit93iOYaPO5PEs7xja85-xckWEI&usqp=CAU" alt="Default Image" class="image-box">
+    </ng-template>
+    <figcaption class="ps-4 pt-2">
+        <p><b>Baddie's Name:</b> {{ person.data.name }}</p>
+        <p><b>Location:</b> {{ person.data.location }}</p>
+        <p><b>Reported by:</b> {{ person.data.rname }} ({{person.data.phone}})</p>
+        <p><b>Time:</b> {{ person.data.added_on | date: 'yyyy-MM-dd (hh:mm a)' }}</p>
+        <p><b>Status:</b> {{ person.data.status }} <button class="change-btn" (click)="changeStatus()">CHANGE</button></p>
+            <div class="mb-3" *ngIf="showStatusOptions">
+                <label>
+                    <input type="radio" [(ngModel)]="newStatus" value="Open" checked> Open
+                </label>
+                <label>
+                    <input type="radio" [(ngModel)]="newStatus" value="Resolved"> Resolved
+                </label>
+                <button class="check-btn ms-2" (click)="confirmStatusChange()">&check;</button>
+            </div>
+        <p><b>Extra Info:</b> {{ person.data.extra }}</p>
+        <button class="btn btn-outline-secondary back-btn" (click)="back()">BACK</button>
+    </figcaption>
+</figure>

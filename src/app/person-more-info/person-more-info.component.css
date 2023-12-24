@@ -1,0 +1,40 @@
+.change-btn {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    color: grey;
+}
+
+.check-btn {
+    background: none;
+    border: none;
+    color: white;
+}
+
+label {
+    margin-left: 1em;
+}
+
+figure {
+    display: flex;
+    width: 40%;
+    height: 360px;
+    padding-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.image-box {
+    width: 40%;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+figcaption {
+    color: white;
+    height: auto;
+}
+
+p {
+    color: white;
+}

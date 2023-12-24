@@ -1,0 +1,28 @@
+legend, label {
+    color: white;
+}
+
+legend {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    width: 60%;
+    position: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.save-btn {
+    background-color: rgb(72, 71, 71);
+    border: 1px solid black;
+    border-radius: 0.3em;
+    width: 4em;
+    color: white;
+}
+
+fieldset {
+    border: 1px solid white;
+    border-radius: 0.5em;
+}

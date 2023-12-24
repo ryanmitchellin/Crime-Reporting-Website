@@ -1,0 +1,8 @@
+<tr class="row">
+    <td class="col-2">{{ person.data.location }}</td>
+    <td class="col-2">{{ person.data.name }}</td>
+    <td class="col-3">{{ person.data.added_on | date: 'yyyy-MM-dd (hh:mm a)' }}</td>
+    <td class="col-2">{{ person.data.status }}</td>
+    <td class="col-2"><button class="more-btn" (click)="onMoreInfo()">MORE INFO</button></td>
+    <td class="col-1"><button class="del-btn ps-3" (click)="onDelete($event, person.key)">&#10005;</button></td>
+</tr>

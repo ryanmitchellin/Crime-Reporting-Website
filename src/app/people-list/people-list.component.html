@@ -1,0 +1,21 @@
+<app-map></app-map>
+<div class="table-container">
+    <table class="table table-dark">
+        <thead>
+            <tr class="row">
+                <th class="col-2" (click)="sortByLocation()">Location</th>
+                <th class="col-2" (click)="sortByName()">Baddie's Name</th>
+                <th class="col-3" (click)="sortByAddedOn()">Time Reported</th>
+                <th class="col-2" (click)="sortByStatus()">Status</th>
+                <th class="col-2"></th>
+                <th class="col-1"></th>
+            </tr>
+        </thead>
+            <app-person
+                *ngFor="let p of people"
+                [person]="p"
+                (delete)="onPersonDelete($event)"
+            ></app-person>
+    </table>
+</div>
+<button class="add-btn" routerLink="/person/add">CREATE NUISANCE REPORT</button>
