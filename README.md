@@ -1,4 +1,4 @@
-# Project: Baddie reported by the civilians website
+# Project: Crime reported by the civilians website
 
 ## About
 This is a website where civilians can report the baddie's information and the location where they saw it. Then, the location can be seen on the map using the Leaflet API.
